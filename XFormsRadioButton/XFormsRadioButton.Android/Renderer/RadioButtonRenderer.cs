@@ -1,13 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Xamarin.Forms;
 using XFormsRadioButton.CustomControls;
@@ -18,8 +8,7 @@ using Xamarin.Forms.Platform.Android;
 [assembly: ExportRenderer(typeof(CustomRadioButton), typeof(RadioButtonRenderer))]
 namespace XFormsRadioButton.Android.Renderer
 {
-
-   //  using NativeRadioButton = RadioButton;
+    //  using NativeRadioButton = RadioButton;
 
     public class RadioButtonRenderer: ViewRenderer<CustomRadioButton, RadioButton>
     {
@@ -51,8 +40,6 @@ namespace XFormsRadioButton.Android.Renderer
             this.Element.Checked = e.IsChecked;
         }
 
-      
-
         void ElementOnPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             switch (e.PropertyName)
@@ -63,7 +50,6 @@ namespace XFormsRadioButton.Android.Renderer
                 case "Text":
                     Control.Text = Element.Text;
                     break;
-
             }
         }
     }

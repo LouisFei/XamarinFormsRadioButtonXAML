@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Xamarin.Forms;
 
 namespace XFormsRadioButton.ViewModel
 {
@@ -18,18 +13,13 @@ namespace XFormsRadioButton.ViewModel
 			LoadData ();
         }
 
-
         private void LoadData()
         {
-
             for (int i = 0; i < 3; i++)
 			{
                 MyList.Add(i, "Item " + i); 
 			}
-
-            
         }
-
 
         private Dictionary<int, string> myList;
         public Dictionary<int, string> MyList

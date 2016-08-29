@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using XFormsRadioButton.ViewModel;
-using XFormsRadioButton;
+﻿using XFormsRadioButton.ViewModel;
 using XFormsRadioButton.CustomControls;
 
 namespace XFormsRadioButton.Pages
@@ -14,6 +8,7 @@ namespace XFormsRadioButton.Pages
         public RadioGroupDemo()
         {
             InitializeComponent();
+
             this.BindingContext = new RadioGroupDemoViewModel();
 
             MyRadiouGroup.CheckedChanged += MyRadiouGroup_CheckedChanged;	
@@ -25,10 +20,7 @@ namespace XFormsRadioButton.Pages
 
             if (radio == null || radio.Id == -1) return;
 
-            txtSelected.Text = radio.Text;
-
-           
+            txtSelected.Text = radio.Text;           
         }
-
     }
 }
